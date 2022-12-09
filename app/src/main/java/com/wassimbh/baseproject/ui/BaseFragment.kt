@@ -8,17 +8,10 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
 
-abstract class BaseFragment<V : ViewModel, D : ViewDataBinding> : Fragment() {
+abstract class BaseFragment<D : ViewDataBinding> : Fragment() {
 
-    open var isChildFragment: Boolean = false
-
-    lateinit var mViewModel: V
     open lateinit var mDataBinding: D
-    open lateinit var mMainViewModel: MainViewModel
-
-    protected abstract fun getViewModel(): Class<V>
 
     @get:LayoutRes
     protected abstract val layoutResourceId: Int
