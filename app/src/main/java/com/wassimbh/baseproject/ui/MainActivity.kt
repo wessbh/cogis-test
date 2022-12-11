@@ -19,16 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         hideSystemUI()
-        supportFragmentManager.beginTransaction().replace(R.id.main_container, SplashScreenFragment()).commit()
-        Coroutines.main {
-            delay(1000)
-            launchFragment(
-                fragment = BlankFragment(),
-                backStackName = null,
-                isAdd = false,
-                withAnimation = true
-            )
-        }
     }
 
     /**
