@@ -1,10 +1,8 @@
-package com.wassimbh.baseproject.utilities
+package com.wassimbh.cogistest.utilities
 
-import android.app.Activity
-import android.text.TextUtils.replace
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.wassimbh.baseproject.R
+import com.wassimbh.cogistest.R
 
 fun Fragment.launchFragment(fragment: Fragment, backStackName: String? = null, isAdd: Boolean = false, withAnimation: Boolean = false) {
 

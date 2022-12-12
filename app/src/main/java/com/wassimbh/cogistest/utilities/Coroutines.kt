@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.utilities
+package com.wassimbh.cogistest.utilities
 
 import kotlinx.coroutines.CoroutineExceptionHandler
 import kotlinx.coroutines.CoroutineScope

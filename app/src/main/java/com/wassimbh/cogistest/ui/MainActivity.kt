@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.ui
+package com.wassimbh.cogistest.ui
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -7,11 +7,8 @@ import android.view.View
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import com.wassimbh.baseproject.R
-import com.wassimbh.baseproject.utilities.Coroutines
-import com.wassimbh.baseproject.utilities.launchFragment
+import com.wassimbh.cogistest.R
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.delay
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {

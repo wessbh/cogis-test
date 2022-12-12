@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.wassimbh.baseproject'
+    namespace 'com.wassimbh.cogistest'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.wassimbh.baseproject"
+        applicationId "com.wassimbh.cogistest"
         minSdk 23
         targetSdk 33
         versionCode 1

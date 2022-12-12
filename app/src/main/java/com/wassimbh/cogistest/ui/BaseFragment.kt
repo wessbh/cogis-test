@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.ui
+package com.wassimbh.cogistest.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

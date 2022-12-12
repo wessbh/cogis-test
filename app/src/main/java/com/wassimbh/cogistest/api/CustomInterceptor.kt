@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.api
+package com.wassimbh.cogistest.api
 
 import okhttp3.Interceptor
 import okhttp3.Response

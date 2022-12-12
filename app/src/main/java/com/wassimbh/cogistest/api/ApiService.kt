@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.api
+package com.wassimbh.cogistest.api
 
 import retrofit2.http.GET
 

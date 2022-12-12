@@ -1,9 +1,9 @@
-package com.wassimbh.baseproject.ui
+package com.wassimbh.cogistest.ui
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.wassimbh.baseproject.api.ApiService
-import com.wassimbh.baseproject.utilities.Coroutines
+import com.wassimbh.cogistest.api.ApiService
+import com.wassimbh.cogistest.utilities.Coroutines
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

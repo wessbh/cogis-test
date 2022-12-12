@@ -1,10 +1,10 @@
-package com.wassimbh.baseproject.di
+package com.wassimbh.cogistest.di
 
 import android.content.Context
-import com.wassimbh.baseproject.BuildConfig
-import com.wassimbh.baseproject.api.ApiService
-import com.wassimbh.baseproject.api.CustomInterceptor
-import com.wassimbh.baseproject.utilities.SharedPreferencesProvider
+import com.wassimbh.cogistest.BuildConfig
+import com.wassimbh.cogistest.api.ApiService
+import com.wassimbh.cogistest.api.CustomInterceptor
+import com.wassimbh.cogistest.utilities.SharedPreferencesProvider
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

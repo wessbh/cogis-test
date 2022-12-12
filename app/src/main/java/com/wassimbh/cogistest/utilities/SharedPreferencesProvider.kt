@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject.utilities
+package com.wassimbh.cogistest.utilities
 
 import android.content.Context
 import android.content.SharedPreferences

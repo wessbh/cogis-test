@@ -1,4 +1,4 @@
-package com.wassimbh.baseproject
+package com.wassimbh.cogistest
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
