@@ -1,9 +1,14 @@
 package com.wassimbh.cogistest.di
 
 import android.content.Context
+import androidx.room.Room
 import com.wassimbh.cogistest.BuildConfig
 import com.wassimbh.cogistest.api.ApiService
 import com.wassimbh.cogistest.api.CustomInterceptor
+import com.wassimbh.cogistest.dao.PoiDao
+import com.wassimbh.cogistest.data.AppDatabase
+import com.wassimbh.cogistest.utilities.Constants
+import com.wassimbh.cogistest.utilities.ResourcesProvider
 import com.wassimbh.cogistest.utilities.SharedPreferencesProvider
 import dagger.Module
 import dagger.Provides
@@ -25,6 +30,31 @@ import java.util.concurrent.TimeUnit
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModule {
+
+    /**
+     * Provide the app database
+     * @param context which represents the application class
+     * @return AppDatabase instance of singleton db used across the app
+     */
+    @Provides
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): AppDatabase {
+        return Room.databaseBuilder(context, AppDatabase::class.java, Constants.DB_NAME)
+            .fallbackToDestructiveMigration()
+            .build()
+    }
+
+
+    /**
+     * Provide PoiDao
+     * @param db AppDatabase
+     * @return a singleton PoiDao instance
+     */
+    @Provides
+    @Singleton
+    fun providePoiDao(db: AppDatabase):PoiDao{
+        return db.getPoiDao()
+    }
 
     /**
      * Provide the api base url
@@ -83,4 +113,12 @@ class AppModule {
     @Provides
     @Singleton
     fun provideSharedPrefs(@ApplicationContext context: Context): SharedPreferencesProvider = SharedPreferencesProvider(context)
+
+    /**
+     * Provide the ResourcesProvider that contains some methods that provides strings, drawables and context
+     * @return ResourcesProvider
+     */
+    @Provides
+    @Singleton
+    fun provideResourceProvider(@ApplicationContext context: Context): ResourcesProvider = ResourcesProvider(context)
 }

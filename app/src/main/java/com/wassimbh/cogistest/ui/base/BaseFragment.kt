@@ -1,4 +1,4 @@
-package com.wassimbh.cogistest.ui
+package com.wassimbh.cogistest.ui.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,13 +22,11 @@ abstract class BaseFragment<D : ViewDataBinding> : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        beforeInflationSetup()
         mDataBinding = DataBindingUtil.inflate(inflater, layoutResourceId, container, false)
-        return mDataBinding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        setUpView()
         viewModelObserver()
+        return mDataBinding.root
     }
 
     override fun onDestroyView() {
@@ -41,6 +39,10 @@ abstract class BaseFragment<D : ViewDataBinding> : Fragment() {
     }
 
     open fun setUpView() {
+        // Will be implemented into the Fragments implemented this class
+    }
+
+    open fun beforeInflationSetup() {
         // Will be implemented into the Fragments implemented this class
     }
 

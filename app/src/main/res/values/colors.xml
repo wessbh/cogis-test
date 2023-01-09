@@ -4,9 +4,17 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="red">#E12727</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cogis_orange">#DD8109</color>
     <color name="cogis_blue">#0D7ABD</color>
+    <color name="floor_color">#028CA1</color>
+    <color name="office_color">#445597</color>
+    <color name="office_color_details">#19265C</color>
+    <color name="marker_color">#B3C66AA4</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#747575</color>
+    <color name="gray_light">#DDDDDD</color>
+    <color name="gray_medium">#B8B8B8</color>
 </resources>

@@ -1,5 +1,6 @@
-package com.wassimbh.cogistest.ui
+package com.wassimbh.cogistest.ui.main
 
+import android.content.pm.ActivityInfo
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         hideSystemUI()
         setupNavBar()
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
     }
 
     /**

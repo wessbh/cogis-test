@@ -2,5 +2,12 @@
     <string name="app_name">CogisTest</string>
     <string name="mapbox_access_token">pk.eyJ1IjoiY29naXMiLCJhIjoiY2o5enQ4cmp2NW05MjJ4czJxOG8xMmp6diJ9.LGTaMlPID3eG5MGFwjMxyw</string>
     <string name="title_maps">Maps</string>
-    <string name="title_data">Données</string>
+    <string name="title_data">Data</string>
+    <string name="afficher">Afficher</string>
+    <string name="masquer">Masquer</string>
+    <string name="bureau">Bureau</string>
+    <string name="rdc">Sous sol</string>
+    <string name="manage_markers">Manage markers</string>
+    <string name="point_of_interest_list">Point of interest list</string>
+    <string name="confirm">Confirm</string>
 </resources>
